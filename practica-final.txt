@@ -1,0 +1,37 @@
+
+Problemática: 
+una empresa está perdiendo dinero porque en las transacciones con moneda internacional hay errores del personal al realizar la conversión a mano cuando se pasa de Euro a Peso Mexicano y de Dolar a Peso Mexicano. 
+
+----------------------------------------------------
+
+Algoritmo:
+
+1. Buscar el valor actual de las monedas en cuestión
+2. solicitar al usuario el tipo de conversión (Euro a Mex o Dolar a Mex)
+3. solicitar al usuario el monto a convertir
+4. realizar la conversión usando el tipo de cambio correspondiente
+5. devolver el resultado
+
+----------------------------------------------------
+
+Pseudocódigo:
+
+Inicio
+    definir tipo_de_cambio_eur_a_mex = 23.7
+    definir tipo_de_cambio_usd_a_mex = 20.75
+
+    # 2. solicitar al usuario el tipo de conversión (Euro a Mex o Dolar a Mex)
+    Mostrar Mensaje: "Ingrese el tipo de moneda de origen para la conversión"
+
+    # 3. solicitar al usuario el monto a convertir
+    Mostrar Mensaje: "Ingrese el monto a convertir: "
+
+    # 4. realizar la conversión usando el tipo de cambio correspondiente
+    si tipo_conversion = "EUR"
+      calcular resultado = monto_a_convertir * tipo_de_cambio_eur_a_mex
+    sino
+      calcular resultado = monto_a_convertir * tipo_de_cambio_usd_a_mex
+
+     # 5. devolver el resultado
+     Mostrar Mensaje: "El importe de la conversión es $ "
+Fin
